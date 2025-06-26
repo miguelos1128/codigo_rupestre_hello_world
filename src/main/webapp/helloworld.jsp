@@ -20,17 +20,17 @@
 			<ul class="lisr-group list-group-flush">
 			
 			<li class="list-group-item"> <strong>Nombre:</strong> ${nombre} </li>
+			<li class="list-group-item"> <strong>Apellido:</strong> ${apellido} </li>
 			<li class="list-group-item"> <strong>Edad:</strong> ${edad} </li>
+			<li class="list-group-item"> <strong>Profesión:</strong> ${profesion} </li>
+			<li class="list-group-item"> <strong>E-mail:</strong> ${email} </li>
 			<li class="list-group-item"> <strong>Pais:</strong> ${pais} </li>
+			<li class="list-group-item"> <strong>Estado:</strong> ${estado} </li>
 			<li class="list-group-item"> <strong>Creación:</strong> ${creacion} </li>
+			
+			<%-- apellido, email, profesion, edad, estado; --%>
 			</ul>
 		</div>
 	</div>
-	<h1>Etenro aprendiz</h1>
-	
-	<p>Nombre: ${nombre} </p>
-	<p>Edad: ${edad} </p>
-	<p>País: ${pais}</p>
-	<p>Creacion: ${creacion}
 </body>
 </html>

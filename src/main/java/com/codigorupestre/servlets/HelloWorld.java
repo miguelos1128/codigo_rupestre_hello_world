@@ -26,17 +26,27 @@ public class HelloWorld extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    
+    //Se cambio el doGet por el post --%>
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String nombre = request.getParameter("nombre");
+		String apellido = request.getParameter("apellido");
+		String email = request.getParameter("email");
+		String profesion = request.getParameter("profesion");
 		int edad =  Integer.parseInt(request.getParameter("edad"));
 		String pais = request.getParameter("pais");
+		String estado = request.getParameter("estado");
 		
 		request.setAttribute("nombre", nombre);
+		request.setAttribute("apellido", apellido);
+		request.setAttribute("email", email);
+		request.setAttribute("profesion", profesion);
 		request.setAttribute("edad", edad);
 		request.setAttribute("pais", pais);
+		request.setAttribute("estado", estado);
 		request.setAttribute("creacion", LocalDateTime.now().toString());
 		
-		
+		//apellido, email, profesion, edad, estado;
 		request.getRequestDispatcher("/helloworld.jsp").forward(request, response);
 	}
 

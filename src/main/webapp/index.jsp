@@ -25,12 +25,24 @@
  		
 	 		<div class="card-body">
 	 		
-	 			<form action="HelloWorld" method= "get">
+	 			<form action="HelloWorld" method= "post"><%-- //Se cambio el get por el post --%>
+	 			
 					<div class="mb-3">
 						<label for="nombre" class="from-label">Nombre:</label>
 						<input type = "text" class="form-control" id="nombre" name = "nombre" required">
 					</div> 		
-						
+					<div class="mb-3">
+						<label for="apellido" class="from-label">Apellido:</label>
+						<input type = "text" class="form-control" id="apellido" name = "apellido" required">
+					</div> 		
+					<div class="mb-3">
+						<label for="email" class="from-label">E-mail:</label>
+						<input type = "text" class="form-control" id="email" name = "email" required">
+					</div> 	
+					<div class="mb-3">
+						<label for="profesion" class="from-label">Profesión:</label>
+						<input type = "text" class="form-control" id="profesion" name = "profesion" required">
+					</div> 	
 					<div class="mb-3">
 						<label for="edad" class="from-label">Edad:</label>
 						<input type = "number" class="form-control" id="edad" name= "edad" equired>
@@ -45,7 +57,13 @@
 							<option value="Argentina">Argentina</option>
 							<option value="Mexico">México</option>
 						</select>
-					</div>  	
+					</div>  
+					
+					<div class="mb-3">
+						<label for="estado" class="from-label">Estado:</label>
+						<input type = "text" class="form-control" id="estado" name = "estado" required">
+					</div> 
+						
 					<button type="submit" class="btn btn-success">Registrar</button>	
 	 			</form>
 	 			 
